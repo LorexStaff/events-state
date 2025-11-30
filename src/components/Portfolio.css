@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.portfolio-wrapper {
+  padding-left: 80px;
+  padding-right: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.toolbar {
+  display: flex;
+  gap: 8px;
+  padding: 24px 0 16px;
+  flex-wrap: wrap;
+  width: calc(3 * 320px + 2 * 20px);
+}
+
+.filter-btn {
+  padding: 8px 20px;
+  border: 1px solid #000;
+  background: #fff;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 0;
+}
+
+.filter-btn.active {
+  background-color: #646567;
+  color: #fff;
+}
+
+.project-columns {
+  display: flex;
+  gap: 20px;
+  width: calc(3 * 320px + 2 * 20px);
+  margin: 0 auto 40px;
+}
+
+.project-column {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  border: none;
+  border-radius: 0;
+}
